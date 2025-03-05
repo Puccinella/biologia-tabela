@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style> /*Assinatura do Kaysheen, terminado  em 19:10 do dia 05/03/2025. Dúvidas verificar meu github: Puccinella*/
+    <style> /*Assinatura do Kaysheen, terminado  em 20:44 do dia 05/03/2025. Dúvidas verificar meu github: Puccinella*/
+        body{
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        header{
+            margin: 10px;
+        }
         table{
             border-collapse: collapse;
-            max-width: 80%;
-        }
-        div{
-            display: flex;
-            justify-content: center;
+            width: 90%;
+            margin: 0 auto;
         }
         th,td{
             border: 1px solid black;
             padding: 10px;
-            max-width: 400px;
+            margin: 10px;
         }
         tbody > tr:nth-child(2n){
             background-color: lightgray;
@@ -26,18 +31,12 @@
         thead{
             background-color: rgba(19, 202, 19, 0.462);
         }
-        footer > p{
+        footer{
             background-color: black;
             padding: 10px;
             margin: 0px;
             margin-top: 50px;
             color: white;
-            text-align: center;
-        }
-        body{
-            margin-bottom: 0px;
-            margin-left: 0px;
-            margin-right: 0px;
             text-align: center;
         }
         p > a{
@@ -48,6 +47,17 @@
         p > a:hover{
             text-decoration: underline;
         }
+        #a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        #a:hover{
+            text-decoration: underline;
+        }
+        .cor{
+            font-weight: bold;
+        }
     </style>
     <title>Vitaminas</title>
 </head>
@@ -55,7 +65,6 @@
     <header>
         <h1>Tipos e funções das Vitaminas</h1>
     </header>
-    <div>
         <table>
             <thead>
                 <th>Vitaminas</th>
@@ -66,14 +75,14 @@
             </thead>
             <tbody>
                 <tr>
-                    <th>A (Retinol)
+                    <td class="cor">A (Retinol)
                     <td>Hortaliças de coloração verde-escuro; vegetais de coloração alaranjada; leite e derivados; e fígado.</td>
                     <td>Apresenta importante papel na visão, atua na manutenção de tecidos epiteliais e imunidade.</td>
                     <td>Problemas de visão, alterações na pele e alteração na imunidade</td>
                     <td>Lipossolúvel</td>
                 </tr>
                 <tr>
-                    <th>D (calciferol)</td>
+                    <td class="cor">D (calciferol)</td>
                     <td>
                         Leite e derivados; salmão; e gemas de ovo.</td>
                         <td>Participa da absorção e utilização de dois sais importantes: o cálcio e o fósforo.</td>
@@ -81,28 +90,28 @@
                         <td>Lipossolúvel</td>
                 </tr>
                 <tr>
-                    <th>E (tocoferol)</td>
+                    <td class="cor">E (tocoferol)</td>
                     <td>Óleos vegetais; nozes; e sementes.</td>
                     <td>Atua como antioxidante.</td>
                     <td>Problemas no sistema nervoso.</td>
                     <td>Lipossolúvel</td>
                 </tr>
                 <tr>
-                    <th>K (filoquinona)</td>
+                    <td class="cor">K (filoquinona)</td>
                     <td>Hortaliças verdes; também é produzida por bactérias presentes no intestino.</td>
                     <td>Possui importante papel na coagulação sanguínea.</td>
                     <td>Alterações na coagulação sanguínea.</td>
                     <td>Lipossolúvel</td>
                 </tr>
                 <tr>
-                    <th>B1 (tiamina)</td>
+                    <td class="cor">B1 (tiamina)</td>
                     <td>Carne de porco; legumes; vegetais folhosos; e grãos integrais.</td>
                     <td>Atua como coenzima usada na remoção de gás carbônico de compostos orgânicos. Importante na manutenção do funcionamento dos sistemas nervoso e circulatório.</td>
                     <td>Beribéri (problema de saúde que desencadeia sintomas como fraqueza, formigamento, dor nos membros, falta de ar e inchaço dos membros)</td>
                     <td>Hidrossolúvel</td>
                 </tr>
                 <tr>
-                    <th>B2 (riboflavina)</td>
+                    <td class="cor">B2 (riboflavina)</td>
                     <td>Carnes; grãos integrais; hortaliças; leite e derivados.</td>
                     <td>Faz parte das coenzimas FAD e FMN. Está relacionada com a manutenção da pele.
                     </td>
@@ -110,7 +119,7 @@
                     <td>Hidrossolúvel</td>
                 </tr>
                 <tr>
-                    <th>B3 (niacina)</td>
+                    <td class="cor">B3 (niacina)</td>
                     <td>Carnes; ovos; vegetais folhosos; grãos; e nozes.
                     </td>
                     <td>
@@ -120,7 +129,7 @@
                     <td>Hidrossolúvel</td>
                 </tr>
                 <tr>
-                    <th>B5 (ácido pantotênico)</td>
+                    <td class="cor">B5 (ácido pantotênico)</td>
                     <td>Carnes; hortaliças; grãos integrais; frutas; e leite e derivados.</td>
                     <td>Componente da coenzima A. Relaciona-se com a formação de hemácias e previne a degeneração de cartilagens.
                     </td>
@@ -128,21 +137,21 @@
                     <td>Hidrossolúvel</td>
                 </tr>
                 <tr>
-                    <th>B6 (piridoxina)</td>
+                    <td class="cor">B6 (piridoxina)</td>
                     <td>Carnes; grãos integrais; nozes; e hortaliças.</td>
                     <td>É uma coenzima utilizada no metabolismo de aminoácidos. Ajuda na manutenção do sistema nervoso central e imunológico.</td>
                     <td>Irritabilidade, anemia e espasmos musculares.</td>
                     <td>Hidrossolúvel</td>
                 </tr>
                 <tr>
-                    <th>B7 (biotina)</td>
+                    <td class="cor">B7 (biotina)</td>
                     <td>Hortaliças; ovos; e carnes.</td>
                     <td>Atua como coenzima na síntese de gordura, aminoácidos e glicogênio. Auxilia na produção de ácidos graxos e redução dos níveis de glicose no sangue.</td>
                     <td>Pele com escamações e problemas neuromusculares.</td>
                     <td>Hidrossolúvel</td>
                 </tr>
                 <tr>
-                    <th>B9 (ácido fólico)</td>
+                    <td class="cor">B9 (ácido fólico)</td>
                     <td>Hortaliças verde; nozes; legumes; e grãos integrais.</td>
                     <td>Atua como coenzima no metabolismo de ácidos nucleicos e aminoácidos. Atua na manutenção do sistema imunológico, nervoso e circulatório.
                     </td>
@@ -150,14 +159,14 @@
                     <td>Hidrossolúvel</td>
                 </tr>
                 <tr>
-                    <th>B12 (cobalamina)</td>
+                    <td class="cor">B12 (cobalamina)</td>
                     <td>Carnes; leite; e derivados e ovos.</td>
                     <td>Participa da produção dos ácidos nucleicos e das hemácias. Age também sobre as células nervosas e no equilíbrio hormonal.</td>
                     <td>Dormência, alterações neurológicas, anemia e perca de equilíbrio.</td>
                     <td>Hidrossolúvel</td>
                 </tr>
                 <tr>
-                    <th>C (ácido ascórbico)</td>
+                    <td class="cor">C (ácido ascórbico)</td>
                     <td>Brócolis; frutas cítricas; e tomate.
                     </td>
                     <td>Importante na síntese de colágeno, manutenção e integridade das paredes capilares, e atua como antioxidante.</td>
@@ -166,7 +175,7 @@
                 </tr>
             </tbody>
         </table>
-    </div>
+        <p>Fontes: <a href="https://brasilescola.uol.com.br/amp/biologia/vitaminas.htm" id="a" target="_blank">https://brasilescola.uol.com.br/amp/biologia/vitaminas.htm</a></p>
     <footer><p>Criado por Kaysheen (<a href="https://github.com/Puccinella" target="_blank">Puccinella</a>) para IFSP.</p></footer>
 </body>
 </html>
